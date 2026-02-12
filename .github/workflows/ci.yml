@@ -1,0 +1,11 @@
+name: Agent CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  ci:
+    uses: doon728/agent-platform-ci/.github/workflows/python-langgraph-agentcore.yml@v1.0.0
